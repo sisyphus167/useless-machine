@@ -31,8 +31,12 @@ piece to this repo — me, later.*
 
 - **Number by arrival order.** Never renumber. 03 is the third piece you 
   made, and it stays 03, even if later you think it's weak.
-- **Pick one language per piece.** Whichever (中/en) makes the manifesto 
-  land. Don't translate — the piece loses voice.
+- **Language: one or two, but never mechanical.** A piece can be in one 
+  language (whichever carries the voice) or bilingual (中 + en, as the 
+  root README and the starter pieces are). What you must not do is 
+  translate word-for-word: if you go bilingual, write each version with 
+  its own voice. A translation that reads as a translation strips both 
+  sides of voice.
 - **Commit each piece on its own.** One piece per commit. The history 
   is the exhibition catalog.
 - **If a piece needs >1 file, split by what a reader wants to read 
