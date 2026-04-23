@@ -1,5 +1,6 @@
 """Shannon's Ultimate Machine, in Python."""
-import time
+import subprocess
+import sys
 
 
 class UselessMachine:
@@ -16,12 +17,17 @@ class UselessMachine:
 
     @classmethod
     def _act(cls):
-        print("switch: ON", flush=True)
-        time.sleep(0.4)
+        process = subprocess.Popen(
+            [sys.executable, "-c", "import time; time.sleep(3600)"]
+        )
+        print(f"switch: ON  [pid {process.pid} running]", flush=True)
+
         print("...a hand emerges from under the lid...", flush=True)
-        time.sleep(0.6)
-        print("...and flips the switch back.", flush=True)
-        time.sleep(0.3)
+
+        process.terminate()
+        process.wait()
+        print(f"...and kills pid {process.pid}.", flush=True)
+
         print("switch: OFF", flush=True)
 
 

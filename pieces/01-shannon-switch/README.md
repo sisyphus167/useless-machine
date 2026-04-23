@@ -18,11 +18,13 @@ python main.py
 ### 你会看到
 
 ```
-switch: ON
+switch: ON  [pid 12345 running]
 ...a hand emerges from under the lid...
-...and flips the switch back.
+...and kills pid 12345.
 switch: OFF
 ```
+
+（PID 每次运行都不同。`switch: ON` 时真有一个 Python 子进程被拉起来；中间那一拍就是 `process.terminate()`——那只手真的按到了开关。 / The PID changes each run. On `switch: ON` a real Python subprocess is spawned; the middle beat is `process.terminate()` — the hand really pushing the switch.）
 
 ---
 
@@ -50,8 +52,10 @@ python main.py
 ### What you'll see
 
 ```
-switch: ON
+switch: ON  [pid 12345 running]
 ...a hand emerges from under the lid...
-...and flips the switch back.
+...and kills pid 12345.
 switch: OFF
 ```
+
+（PID 每次运行都不同。`switch: ON` 时真有一个 Python 子进程被拉起来；中间那一拍就是 `process.terminate()`——那只手真的按到了开关。 / The PID changes each run. On `switch: ON` a real Python subprocess is spawned; the middle beat is `process.terminate()` — the hand really pushing the switch.）
