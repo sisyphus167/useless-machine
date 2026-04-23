@@ -12,16 +12,16 @@ class UselessMachine:
     """
 
     def __new__(cls):
-        cls._act()
-        return None
-
-    @classmethod
-    def _act(cls):
         process = subprocess.Popen(
             [sys.executable, "-c", "while True: pass"]
         )
         print(f"switch: ON  [pid {process.pid} running]", flush=True)
 
+        cls._act(process)
+        return None
+
+    @staticmethod
+    def _act(process):
         print("...a hand emerges from under the lid...", flush=True)
 
         process.terminate()
