@@ -7,7 +7,7 @@
 
 1952 年，克劳德·香农造了一只盒子。盒面上只有一个开关。当你把开关拨到 ON，盒子里会伸出一只小手，把开关拨回 OFF，然后缩回去。这就是这台机器的全部功能。
 
-`UselessMachine` 就是那只盒子在 Python 里的化身。调用它会拉起一个真实的子进程——那就是机器唯一一次的肉身显形，带着自己的 PID 短暂活过。紧接着那只手伸出来把它按掉。`__new__` 返回 `None`，Python 这一层不留下任何对象；只剩那个 PID 曾经活过的痕迹。
+`UselessMachine` 就是那只盒子在 Python 里的化身。`__new__` 返回 `None`——实例从未被真正构造出来。机器开了一瞬，刚好够把自己关掉。你抓不住它。你只能见证它曾经短暂存在过。
 
 ### 运行
 
@@ -38,11 +38,10 @@ When you flipped the switch ON, a small hand would emerge from inside the
 box, flip the switch OFF, and retract. This was the whole function of the 
 machine.
 
-`UselessMachine` is that box, in Python. Calling it spawns a real 
-subprocess — the machine's one brief incarnation, carrying its own 
-PID. The hand then emerges and kills it. `__new__` returns `None`, 
-so no Python-side object survives — only the trace of a process that 
-briefly was.
+`UselessMachine` is that box, in Python. `__new__` returns `None` — no 
+instance is ever constructed. The machine turns on just long enough to 
+turn itself off. You cannot hold it. You can only witness its having 
+briefly been.
 
 ### Run
 
