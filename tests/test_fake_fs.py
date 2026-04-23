@@ -26,8 +26,9 @@ def test_delete_removes_shadow_but_not_original(tmp_path):
 
     shadow.delete()
 
-    assert not shadow_path.exists()  # shadow is really gone
-    assert original.exists()         # original is untouched
+    assert not shadow_path.exists()           # shadow file is really gone
+    assert not shadow_path.parent.exists()    # and its shadow_dir too
+    assert original.exists()                  # original is untouched
     assert original.read_text() == "hello"
 
 

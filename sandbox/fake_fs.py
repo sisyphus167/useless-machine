@@ -49,3 +49,4 @@ class ShadowFile:
 
     def delete(self) -> None:
         os.remove(self._path)
+        self._path.parent.rmdir()
