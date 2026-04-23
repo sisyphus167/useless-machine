@@ -11,23 +11,15 @@ class UselessMachine:
     """
 
     def __new__(cls):
-        cls._wake()
         cls._act()
-        cls._rest()
         return None
 
     @classmethod
-    def _wake(cls):
+    def _act(cls):
         print("switch: ON", flush=True)
         time.sleep(0.4)
-
-    @classmethod
-    def _act(cls):
         print("...a hand emerges from under the lid...", flush=True)
         time.sleep(0.8)
-
-    @classmethod
-    def _rest(cls):
         print("switch: OFF", flush=True)
 
 
