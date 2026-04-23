@@ -19,7 +19,9 @@ class UselessMachine:
         print("switch: ON", flush=True)
         time.sleep(0.4)
         print("...a hand emerges from under the lid...", flush=True)
-        time.sleep(0.8)
+        time.sleep(0.6)
+        print("...and flips the switch back.", flush=True)
+        time.sleep(0.3)
         print("switch: OFF", flush=True)
 
 

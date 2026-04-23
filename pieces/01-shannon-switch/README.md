@@ -20,6 +20,7 @@ python main.py
 ```
 switch: ON
 ...a hand emerges from under the lid...
+...and flips the switch back.
 switch: OFF
 ```
 
@@ -51,5 +52,6 @@ python main.py
 ```
 switch: ON
 ...a hand emerges from under the lid...
+...and flips the switch back.
 switch: OFF
 ```
