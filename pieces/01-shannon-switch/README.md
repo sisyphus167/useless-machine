@@ -7,7 +7,7 @@
 
 1952 年，克劳德·香农造了一只盒子。盒面上只有一个开关。当你把开关拨到 ON，盒子里会伸出一只小手，把开关拨回 OFF，然后缩回去。这就是这台机器的全部功能。
 
-`UselessMachine` 就是那只盒子在 Python 里的化身。`__new__` 走完整个流程——开关打开、手伸出、开关合上——然后返回 `None`，实例从未被真正构造出来。整个过程只花大约一秒。你抓不住它。你只能见证它曾经短暂存在过。
+`UselessMachine` 就是那只盒子在 Python 里的化身。`__new__` 返回 `None`——实例从未被真正构造出来。机器开了一瞬，刚好够把自己关掉。你抓不住它。你只能见证它曾经短暂存在过。
 
 ### 运行
 
@@ -35,10 +35,10 @@ When you flipped the switch ON, a small hand would emerge from inside the
 box, flip the switch OFF, and retract. This was the whole function of the 
 machine.
 
-`UselessMachine` is that box, in Python. `__new__` runs the full sequence 
-— switch on, a hand emerges, switch off — and then returns `None`, so no 
-instance is ever constructed. The whole thing takes about a second. You 
-cannot hold it. You can only witness its having briefly been.
+`UselessMachine` is that box, in Python. `__new__` returns `None` — no 
+instance is ever constructed. The machine turns on just long enough to 
+turn itself off. You cannot hold it. You can only witness its having 
+briefly been.
 
 ### Run
 

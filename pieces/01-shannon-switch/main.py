@@ -5,30 +5,29 @@ import time
 class UselessMachine:
     """Its only purpose is to turn itself off.
 
-    The switch turns on. A hand reaches out from inside the box and
-    flips it off. `__new__` runs the whole sequence and then returns
-    None — no instance is ever constructed, only the trace of one
-    having briefly been.
+    The switch turns on, and in the same breath the machine reaches out
+    and turns it off. No instance is ever returned — the machine never
+    really exists, only the trace of it having existed.
     """
 
     def __new__(cls):
-        cls._turn_on()
-        cls._reach_out()
-        cls._turn_off()
+        cls._wake()
+        cls._act()
+        cls._rest()
         return None
 
     @classmethod
-    def _turn_on(cls):
+    def _wake(cls):
         print("switch: ON", flush=True)
         time.sleep(0.4)
 
     @classmethod
-    def _reach_out(cls):
+    def _act(cls):
         print("...a hand emerges from under the lid...", flush=True)
         time.sleep(0.8)
 
     @classmethod
-    def _turn_off(cls):
+    def _rest(cls):
         print("switch: OFF", flush=True)
 
 
