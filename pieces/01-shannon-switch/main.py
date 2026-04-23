@@ -6,9 +6,10 @@ import sys
 class UselessMachine:
     """Its only purpose is to turn itself off.
 
-    The switch turns on, and in the same breath the machine reaches out
-    and turns it off. No instance is ever returned — the machine never
-    really exists, only the trace of it having existed.
+    Calling UselessMachine() spawns a real subprocess — the machine's
+    one brief incarnation, carrying its own PID. The hand then emerges
+    and kills it. __new__ returns None, so no Python-side object
+    survives; only the trace of a process that briefly was.
     """
 
     def __new__(cls):
