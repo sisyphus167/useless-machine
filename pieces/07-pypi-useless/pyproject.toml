@@ -1,0 +1,23 @@
+[project]
+name = "useless"
+version = "0.1.0"
+description = "The most dependable package on PyPI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "sisyphus167" }]
+keywords = ["useless", "nothing", "concept-art"]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Artistic Software",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
