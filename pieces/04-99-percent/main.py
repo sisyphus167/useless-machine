@@ -12,7 +12,7 @@ def render(pct: float, suffix: str = "") -> None:
     bar = "█" * filled + "·" * (WIDTH - filled)
     line = f"\r[{bar}] {pct:5.1f}%  {suffix}"
     # Pad with spaces to overwrite any previous longer suffix
-    sys.stdout.write(line.ljust(WIDTH + 30))
+    sys.stdout.write(line.ljust(WIDTH + 40))
     sys.stdout.flush()
 
 
