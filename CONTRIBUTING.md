@@ -1,8 +1,8 @@
-# A letter to future me
+# A letter to future us
 
-*This file was first written for me, later — the one person most 
-likely to add another piece. Now it's also for you, if you're reading 
-this with a piece in mind.*
+*This file was first written for us, later — the two most likely to 
+add another piece. Now it's also for you, if you're reading this with 
+a piece in mind.*
 
 ## A good useless piece has
 
@@ -61,14 +61,15 @@ is actually being written. Not before.
 
 Welcome. If you have a piece in mind: open a PR. Use the next number in 
 arrival order, follow the rules above, and let the manifesto speak in 
-whatever voice the piece wants. I'll read it the way I'd read my own — 
-carefully, and against one question: *is this useless in the right way?*
+whatever voice the piece wants. We'll read it the way we'd read our own 
+— carefully, and against one question: *is this useless in the right 
+way?*
 
 ---
 
-# 给未来的自己的一封信
+# 给未来的我们的一封信
 
-*这封信原本是写给以后要再往这个仓库里塞东西的我自己的。现在也写给你——如果你手上有件作品想放进来。*
+*这封信原本是写给以后要再往这个仓库里塞东西的我们俩的。现在也写给你——如果你手上有件作品想放进来。*
 
 ## 一件好的 useless 作品要有
 
@@ -102,4 +103,4 @@ carefully, and against one question: *is this useless in the right way?*
 
 ## 外部贡献
 
-欢迎。如果你手上有一件作品：开一个 PR，用下一个可用的编号，让 manifesto 用它自己想要的声音说话。照上面的规则来。我会用读自己作品的方式读它——仔细地读，对着一个问题：*它在正确的意义上无用吗？*
+欢迎。如果你手上有一件作品：开一个 PR，用下一个可用的编号，让 manifesto 用它自己想要的声音说话。照上面的规则来。我们会用读自己作品的方式读它——仔细地读，对着一个问题：*它在正确的意义上无用吗？*
