@@ -16,7 +16,7 @@ piece would not be safe to re-run otherwise.
 
 ## Prerequisites
 
-From the repo root: `pip install -e .` so `import sandbox` resolves.
+See the root README for setup (`python -m venv .venv && pip install -e ".[dev]"`) — you need `sandbox` on the import path.
 
 ## Run
 

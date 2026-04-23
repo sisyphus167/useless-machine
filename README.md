@@ -26,7 +26,8 @@ manifesto. Run it, look at it, move on.
 ## Running a piece
 
 ```bash
-pip install -e ".[dev]"           # once, from the repo root
+python -m venv .venv && source .venv/bin/activate   # once
+pip install -e ".[dev]"                             # once, from the repo root
 cd pieces/01-shannon-switch
 python main.py
 ```
