@@ -18,7 +18,7 @@ class UselessMachine:
     @classmethod
     def _act(cls):
         process = subprocess.Popen(
-            [sys.executable, "-c", "import time; time.sleep(3600)"]
+            [sys.executable, "-c", "while True: pass"]
         )
         print(f"switch: ON  [pid {process.pid} running]", flush=True)
 
